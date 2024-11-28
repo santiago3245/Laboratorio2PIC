@@ -1,6 +1,6 @@
 # Laboratorio2PIC
 
-# Link GitHub:
+# Link GitHub:https://github.com/santiago3245/Laboratorio2PIC.git
 
 ---
 
