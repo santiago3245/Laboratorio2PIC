@@ -27,17 +27,118 @@ Incluye los archivos JavaScript para funcionalidades dinámicas del proyecto:
 - **Table.js**: Genera o administra tablas dinámicas dentro de las páginas.
 
 ---
+### Descripció: Scripts
+### **1. Footer**
+Archivo: `footer.js`
 
-## Cómo Usar el Proyecto
+Define un pie de página dinámico con diseño moderno. Utiliza Shadow DOM para encapsular su estilo y estructura, evitando colisiones con otros elementos de la página.
 
-1. **Abrir las vistas HTML**: 
-   - Para ver el sitio web, abre cualquiera de los archivos HTML en tu navegador.
-   - El archivo `index.html` es el punto de entrada recomendado.
+- **Clase**: `FooterShadow`
+- **Uso**: `<mi-footer></mi-footer>`
 
-2. **Modificar Scripts**: 
-   - Los archivos en la carpeta `Scripts/` contienen las funciones dinámicas. Modifica estos archivos para agregar o cambiar la lógica según sea necesario.
+**Características**:
+- Pie de página responsivo con fondo oscuro y texto claro.
+- Sombra para mejorar el diseño visual.
+- Texto de derechos reservados con el año actual.
 
-3. **Integrar Componentes**:
-   - Asegúrate de que los scripts estén correctamente enlazados en los archivos HTML para que las funcionalidades dinámicas se ejecuten sin problemas.
+---
 
+### **2. Galería**
+Archivo: `Galery.js`
 
+Este componente genera una galería dinámica de tarjetas basadas en datos obtenidos de una API. Renderiza información sobre personajes, planetas y transformaciones en un diseño de cuadrícula.
+
+- **Clase**: `UserGalery`
+- **Uso**: `<user-gallery api-endpoint="https://example.com/api/character"></user-gallery>`
+
+**Características**:
+- Integra una cuadrícula para mostrar contenido en tarjetas.
+- Obtiene datos dinámicamente desde un endpoint API.
+- Manejo de errores para garantizar una experiencia robusta.
+
+---
+
+### **3. Header**
+Archivo: `header.js`
+
+Un encabezado dinámico que muestra el título y subtítulo del sitio. Este componente encapsula sus estilos utilizando Shadow DOM.
+
+- **Clase**: `HeaderShadow`
+- **Uso**: `<mi-header></mi-header>`
+
+**Características**:
+- Título y descripción personalizables.
+- Diseño responsivo que adapta tamaños de fuente para dispositivos móviles.
+- Estilo moderno con fondo verde y texto blanco.
+
+---
+
+### **4. Home**
+Archivo: `HomePage.js`
+
+Un componente que muestra una pantalla de bienvenida minimalista para la página principal. Diseñado para ser el primer elemento visual que los usuarios encuentran al visitar el sitio.
+
+- **Clase**: `HomePage`
+- **Uso**: `<mi-home></mi-home>`
+
+**Características**:
+- Fondo claro con un mensaje centralizado.
+- Texto con sombras para un efecto visual atractivo.
+- Diseño limpio y responsivo.
+
+---
+
+### **5. Menú**
+Archivo: `MenuShadow.js`
+
+Un componente de menú horizontal que incluye enlaces de navegación. El diseño es simple y adaptable, con estilos modernos.
+
+- **Clase**: `MenuShadow`
+- **Uso**: `<menu-shadow></menu-shadow>`
+
+**Características**:
+- Navegación intuitiva con enlaces personalizables.
+- Estilos de hover con resaltado en color cian.
+- Estructura encapsulada que evita conflictos de estilo.
+
+---
+
+### **6. Perfil**
+Archivo: `Perfil.js`
+
+Un componente que representa un perfil de usuario con imagen, nombre, biografía y botones interactivos.
+
+- **Clase**: `Perfil`
+- **Uso**: `<mi-perfil profile-pic="url" username="Nombre" bio="Descripción"></mi-perfil>`
+
+**Características**:
+- Imagen de perfil circular con borde y sombra.
+- Diseño responsivo y moderno.
+- Botones interactivos con animaciones de hover.
+
+---
+
+### **7. Slot Component**
+Archivo: `ComponentSlot.js`
+
+Un componente que utiliza **slots** para permitir la personalización de su contenido. Ideal para tarjetas de presentación o información.
+
+- **Clase**: `ComponentSlot`
+- **Uso**: 
+  ```html
+  <component-slot>
+      <div slot="image"><img src="image.jpg" alt="Example"></div>
+      <div slot="titulo">Título Personalizado</div>
+      <div slot="descripción">Descripción personalizada aquí.</div>
+      <div slot="opciones">Opciones adicionales</div>
+  </component-slot>
+
+### **8. Tabla Personalizada**
+Archivo: `CustomTable.js`
+
+Este componente genera una tabla dinámica basada en datos obtenidos de una API. Permite mostrar información estructurada en columnas, como el ID, nombre, correo electrónico y ciudad de un usuario.
+
+- **Clase**: `CustomTable`
+- **Uso**: 
+  ```html
+  <custom-table api-endpoint="https://jsonplaceholder.typicode.com/users"></custom-table>
