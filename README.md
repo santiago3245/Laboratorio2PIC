@@ -40,23 +40,4 @@ Incluye los archivos JavaScript para funcionalidades dinámicas del proyecto:
 3. **Integrar Componentes**:
    - Asegúrate de que los scripts estén correctamente enlazados en los archivos HTML para que las funcionalidades dinámicas se ejecuten sin problemas.
 
----
 
-## Requisitos del Entorno
-
-- Navegador web actualizado para ejecutar y probar las vistas HTML.
-- Editor de texto o IDE (como VS Code) para editar los archivos.
-
----
-
-## Futuras Mejoras
-
-- Documentar cada función JavaScript con comentarios detallados.
-- Implementar un archivo de configuración para unificar estilos y enlaces a scripts.
-- Añadir pruebas unitarias para los componentes JavaScript más críticos.
-
----
-
-## Autor
-
-Creado por [Tu Nombre]. Si tienes preguntas o sugerencias, no dudes en contactarme.
